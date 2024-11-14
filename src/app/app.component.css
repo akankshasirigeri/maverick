@@ -1,0 +1,12 @@
+.background-container {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/homeImg.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

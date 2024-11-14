@@ -1,0 +1,65 @@
+.container {
+    height: 85vh;
+    width: 224px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px; /* Optional: Add padding at the top */
+    list-style-type: none !important;  
+    list-style: none !important;  
+}
+
+.sidebar-list .menu-item {
+    border-bottom: 1px solid #000; /* Adjust the color as needed */
+    padding-bottom: 8px; /*Add space between text and underline   */
+    margin-bottom: 16px; /* Add space below underline */
+    font-weight: bold; /* Optional: Make text bold */
+}
+
+.sidebar-list {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    color:#0150EE;
+    font-size: 16px; 
+}
+
+.state-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0 0 15px 0;
+    margin-bottom: 15px;
+    padding-left: 0;
+    text-align: left;
+    align-self: flex-start; /* Align to start of container if using flexbox */
+    width: 100%;
+}
+
+.menu-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #000000; /* Set color to black */
+    text-align: left;
+}
+  
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-items li {
+    font-size: 20px; /* Matches the title's font size */
+    font-weight: bold; /* Matches the title's font weight */
+    color: #000; /* Same color as the title */
+    padding: 15px 0;
+    cursor: pointer;
+    text-align: left; /* Ensures alignment to the left */
+}
