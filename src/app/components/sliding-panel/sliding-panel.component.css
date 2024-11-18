@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+/* Right Panel */
+.right-panel {
+  position: fixed;
+  top: 0;
+  right: -650px;
+  width: 650px;
+  height: 100vh;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out; /* Smooth sliding effect */
+  overflow-y: auto;
+}
+
+/* Open State */
+.right-panel.open {
+  right: 0; /* Slide into view */
+}
+
+.toggle-button-div {
+  padding: 5px;
+  background-color: #fff;
+}
+
+/* Toggle Button (Always Visible) */
+.toggle-button {
+  position: fixed; /* Fixed for visibility */
+  top: 120px;
+  right: 0;
+  width: 50px; /* Updated for circular design */
+  height: 50px;
+  background: #04b4f9; /* Bright blue background */
+  color: white; /* White "+" symbol */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Circular shape */
+  display: flex;
+  align-items: center; /* Center content */
+  justify-content: center;
+  font-size: 24px; /* Size for "+" */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  z-index: 1000; /* Ensure visibility above all elements */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s; /* Smooth animation */
+}
+
+/* Style when the button is toggled open */
+.toggle-button.open {
+  transform: rotate(45deg); /* Rotates "+" into "×" */
+}
+
+/* Hover effect */
+.toggle-button:hover {
+  background: #039ed9; /* Slightly darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bigger shadow on hover */
+}
+
+/* Content Inside the Right Panel */
+.right-panel-content {
+  padding: 40px 50px;
+}
+
+.right-panel-content h2 {
+  margin: 0;
+  color: #04b4f9;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.right-panel-content p,
+ul {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #606368;
+  margin: 0;
+  line-height: 18.52px;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  margin-top: 60px;
+  margin-right: 120px;
+}
+
+.login a {
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  width: fit-content;
+}
+
+.create {
+  margin-right: 30px;
+}
+
+.image {
+  margin: 30px 0;
+}

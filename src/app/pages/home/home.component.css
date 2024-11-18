@@ -1,0 +1,30 @@
+.background-container {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/homeImg.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.sidebar-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.sidebar-welcome-intro {
+  flex: 1;
+  background-image: url("/assets/M-Logo.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

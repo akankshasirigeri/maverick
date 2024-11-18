@@ -1,0 +1,54 @@
+<div class="container">
+  <!-- Toggle Button -->
+  <div class="login">
+    <a href="" class="create">Create account</a>
+    <a href="">Log in</a>
+  </div>
+
+  <button class="toggle-button" (click)="togglePanel()">
+    {{ isOpen ? "×" : "+" }}
+  </button>
+
+  <!-- Right Sliding Panel -->
+  <div class="right-panel" [class.open]="isOpen">
+    <div class="right-panel-content">
+      <h2>Introduction</h2>
+      <p>
+        Jharkhand, state of India, located in the northeastern part of the
+        country. Jharkhand is bordered by the states of Bihar to the north, West
+        Bengal to the east, Odisha to the south, Chhattisgarh to the west,
+        and Uttar Pradesh to the northwest. Its capital is Ranchi.
+      </p>
+      <p>
+        Jharkhand, one of India’s newest states, was carved out of the southern
+        portion of Bihar in 2000. Statehood was the culmination of a long
+        struggle carried on primarily by the Adivasis, or Scheduled Tribes (an
+        official term applied primarily to indigenous communities that fall
+        outside the predominant Indian caste hierarchy). Indian independence
+        brought relatively little socioeconomic benefit to the people of the
+        Jharkhand area, which led to widespread discontent with the Bihar
+        administration, particularly among the tribal peoples. The tribal groups
+        initiated a call for independence from Bihar, and in the 1980s they
+        became militant in their demand. In the 1990s, the separation movement
+        spread to non-tribal communities, ultimately precipitating the creation
+        of a new state. Area 28,833 square miles (74,677 square km). Pop. (2011)
+        32,966,238.
+      </p>
+      <img class="image" src="/assets/jharkhand-intro.png" alt="jharkhand" />
+      <p>
+        Talking about the geography of Jharkhand, it can be said
+        that Jharkhand occupies a forest track in the Santhal Parganas and the
+        Chhotanagpur plateau. Jharkhand is a mountain region which is covered
+        with a dense growth of forests. An estimate of the geography of
+        Jharkhand is as follows:
+      </p>
+      <ul>
+        <li>Area - 79,714 square kilometres.</li>
+        <li>
+          Area of Cultivable land - 38 lakh hectares
+          <a href=""> (Full article...) </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
